@@ -141,6 +141,10 @@ input:focus{
     border-radius: 10px;
 }
 
+::-webkit-file-upload-button:hover{
+    background: #4eb684;
+}
+
 .name{
     width: 350px;
     border-radius: 10px;
@@ -214,3 +218,29 @@ img{
     width: 100%;
 }
 
+
+.btn{
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+}
+
+.submit{
+    color: whitesmoke;
+    background: #549978;
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px #000000;
+    padding: 10px  40px;
+}
+
+.submit:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4eb684;
+}

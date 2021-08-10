@@ -63,7 +63,8 @@ a{
 } */
 
 
-.mainer{
+.mainer,
+.mainer1{
     width: 40%;
     position: absolute;
     top: 50%;
@@ -78,20 +79,33 @@ a{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
+.mainer1{
+    width: 100%;
+    border-radius: 0;
+    padding: 0 5%;
+    background: none;
+}
 .h1{
     color: whitesmoke;
 }
 .registrationFrom{
     width: 70%;
     /* background: blue; */
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+input{
+    border: none;
+    outline: none;
+}
+
+input:focus{
+    border: 2p solid red;
+}
 /* .names{
     display: flex;
 } */
@@ -123,12 +137,22 @@ a{
     padding: 0 12px;
 }
 
-textarea{
+.article{
     width: 350px;
+    outline: none;
     border-radius: 10px;
     padding: 10px 12px;
     resize: none;
     height: 200px;
+}
+
+.description{
+    width: 350px;
+    height: 100px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 10px;
+    resize: none;
 }
 
 @media(max-width: 700px){
@@ -137,3 +161,26 @@ textarea{
         height: 70%;
     }
 }
+
+
+.img1,.img2, .img3{
+    width: 30%;
+    background: #549978;
+    color: whitesmoke;
+    border-radius: 10px;
+    max-height: 500px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.containerImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+img{
+    width: 100%;
+}
+
